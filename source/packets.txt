@@ -1,0 +1,2 @@
+bytelabs_s_r_l_s_lib_bytechannelssetting == 2.4.0.5
+bytelabs_s_r_l_s_lib_ >= 1.0.0.1
