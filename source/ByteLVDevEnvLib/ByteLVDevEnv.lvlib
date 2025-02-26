@@ -4,5 +4,10 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">419463168</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Item Name="CheckVersion.vi" Type="VI" URL="../SubVi/CheckVersion.vi"/>
+	<Item Name="ManageSettings.vi" Type="VI" URL="../SubVi/ManageSettings.vi"/>
+	<Item Name="ReadAllVip.vi" Type="VI" URL="../SubVi/ReadAllVip.vi"/>
+	<Item Name="RemoveVersionsPoints.vi" Type="VI" URL="../SubVi/RemoveVersionsPoints.vi"/>
+	<Item Name="SelectFunction.vi" Type="VI" URL="../SubVi/SelectFunction.vi"/>
 	<Item Name="VersionController.vi" Type="VI" URL="../VersionController.vi"/>
 </Library>
