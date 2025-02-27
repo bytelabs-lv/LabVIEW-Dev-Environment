@@ -13,8 +13,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="ByteLVDevEnvLib" Type="Folder" URL="../ByteLVDevEnvLib">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="ByteLVDevEnv" Type="Folder">
+			<Item Name="ByteLVDevEnv.lvlib" Type="Library" URL="../ByteLVDevEnvLib/ByteLVDevEnv.lvlib"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">

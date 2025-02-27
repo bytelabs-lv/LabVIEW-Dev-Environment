@@ -1,4 +1,3 @@
-bytelabs_s_r_l_s_lib_bytechannelssetting == 2.4.0.5
+bytelabs_s_r_l_s_lib_bytechannelssetting == 2.4.0.4
 1.0.0.0 >= bytelabs_s_r_l_s_lib_bytepathmanagement <= 1.0.0.2
 1.0.0.1 > bytelabs_s_r_l_s_lib_bytegsapi <= 1.0.0.2
-bytelabs_s_r_l_s_lib_bytechannelssetting == 2.4.0.8
