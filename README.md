@@ -1,14 +1,24 @@
-# Template repository per progetti LabVIEW
-Questo repository serve come template per progetti di tipo LabVIEW.
+# Bytelabs LabVIEW Development Environment (Byte-LVDevEnv)
+**LabVIEW VIPM configuration management for projects, PIP style**
 
-## Contenuto
-* Il .gitignore evita già di sincronizzare file dinamici di labview (come gli aliases e gli lvlps)
-* Il .gitattributes evita merge automatici su alcuni files come gli lvproj, che altrimenti vengono trattati ed uniti come file xml, rompendoli.
+## Description
+**This library creates a tool in the LabVIEW tools palette, which can be found under Bytelabs > DevEnvironment > Installer.**
+<br>
+This tool allows to select an input version specification file (similar to a requirements.txt file),
+with package information features (as described below).
+<br><br>
+It also allows to select a local (or network) folder where you and your team store private .vip packages, which will
+also be used for packages lookup.
+<br><br>
+Each project can then have its package.txt file, specifying the required packages and their acceptable versions.
+<br>
+The tool will then configure the environment, installing required packages from the web or from your local folder,
+always selecting a compatible version, even upgrading or downgrading when needed, leveraging on VIPM's APIs.
 
-## Istruzioni
-1. Scarica l'ultima release (scaricando lo zip, non facendo clone)
-2. Rinomina la cartella come ti fa più comodo ed inizializza il git repository (comando `git init` da command line).
-3. Crea un repository vuoto su Bitbucket (non aggiungere .gitignore o README altrimenti andranno in conflitto).
-4. Aggiungi il remote che ti serve per il tuo progetto (comando `git remote add origin https://path/of/repo.git`).
-5. Copia o crea i file del progetto nella cartella appena ottenuta.
-6. Sei pronto per fare add, commit e push dei file che vuoi sincronizzare.
+## input file specifications
+Input file (packets.txt, usually but not strict) have the following characteristics
+* Can set a required package, without specific version > the most updated version will be installed
+* Can set a required package, with a minimum (or maximum) version > in this case, if the packet is already installed and has a compatible version, it will not be touched. Otherwise the most updated allowed version will be installed
+* Can set a required package, with a minimum and a maximum version > same as above, within the allowed version range
+Refer to the [Examples folder](examples/) to see a version of this file
+
