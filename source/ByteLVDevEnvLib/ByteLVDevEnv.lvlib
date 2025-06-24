@@ -9,11 +9,11 @@
 </Property>
 	<Item Name="SubVi" Type="Folder">
 		<Item Name="CheckVersion.vi" Type="VI" URL="../SubVi/CheckVersion.vi"/>
+		<Item Name="ComparableVersionString.vi" Type="VI" URL="../SubVi/ComparableVersionString.vi"/>
 		<Item Name="ControlsVisibility.vi" Type="VI" URL="../SubVi/ControlsVisibility.vi"/>
 		<Item Name="ManageSettings.vi" Type="VI" URL="../SubVi/ManageSettings.vi"/>
 		<Item Name="PacketsError.vi" Type="VI" URL="../SubVi/PacketsError.vi"/>
 		<Item Name="ReadAllVip.vi" Type="VI" URL="../SubVi/ReadAllVip.vi"/>
-		<Item Name="RemoveVersionsPoints.vi" Type="VI" URL="../SubVi/RemoveVersionsPoints.vi"/>
 		<Item Name="SelectFunction.vi" Type="VI" URL="../SubVi/SelectFunction.vi"/>
 		<Item Name="UnpackPackets.vi" Type="VI" URL="../SubVi/UnpackPackets.vi"/>
 	</Item>
